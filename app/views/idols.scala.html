@@ -1,0 +1,11 @@
+@(idols : Seq[models.Idol])
+
+@main("Tes to Play") {
+    <h1>Idols Page</h1>
+    @for(idol <- idols){
+        <tr>
+            <td>@idol.id</td>
+            <td>@idol.name</td>
+        </tr>
+    }
+}
